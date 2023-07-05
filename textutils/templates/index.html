@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TextUtils</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TextUtils</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="alert alert-success" role="alert">
+  <strong>Hey there!</strong> Welcome to our text editor!
+  </div>
+    <div class="form-floating container my-4" >
+        <form action='/analyse' method='get'>
+          <label class="my-2"><strong>Enter your text here</strong></label>
+  <textarea class="form-control" placeholder="Type here..." id="floatingTextarea2" name="text" style="height: 271px"></textarea>
+  <br>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="removepunc">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Remove Punctuations</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="uppercase">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Convert to Uppercase</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="lowercase">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Convert to Lowercase</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="nonewlines">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Remove new lines</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="removespace">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Remove extra spaces</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="charcount">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Counting characters</label>
+  </div>
+  <button type="button" class="btn btn-warning my-2">Analyse Text</button>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
